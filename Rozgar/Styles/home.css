@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #E2FC97;
+	font-family: "Times New Roman", "Arial", "sans-serif","Calibri";
+}
+/*-----------------------------------------------------------------*/
+nav{
+	background-color: #03AB1B;
+	color: #010E25;
+	height: 5em;
+	padding: 0.2em;
+	display: flex;
+	flex-direction: row;
+	align-content: stretch;
+	justify-content: space-around;
+}
+/*-----------------------------------------------------------------*/
+.head_logo_tagline{
+	margin-top: 0.8%;
+	display: flex;
+	flex-direction: row;
+
+}
+.tag_line{
+	position: relative;
+	float: left;
+	left: -5%;
+	margin-top: 3.5%;
+}
+#logo{
+	width: 8%;
+}
+/*-----------------------------------------------------------------*/
+.search_bar_services{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	right: 30%;
+	float: right;
+	margin: 0.8%;
+}
+#searchicon{
+	position: relative;
+	display: inline;
+	float: right;
+	font-size: 1.8em;
+	padding: 3%;
+	padding-top: 5%;
+	border: 1px solid black;
+	border-left: 0;
+	background-color: white;
+	cursor: pointer;
+}
+.search_bar_services input[type=text]{
+	position: relative;
+	display: inline;
+	float: right;
+	padding: 1%;
+	border: 1px solid black;
+	border-right: 0;
+	font-size: 1em;
+}
+/*-----------------------------------------------------------------*/
+#lang{
+	margin: 0.8%;
+	position: relative;
+	display: inline;
+	float: right;
+	padding: 1%;
+	border: 1px solid black;
+	font-size: 0.8em;
+}
+/*-----------------------------------------------------------------*/
+.account,.sp{
+	margin: 1%;
+	position: relative;
+	display: inline;
+	float: right;
+	padding: 1%;
+	border: 1px solid black;
+	background-color: white;
+}
+.account a,.sp a{
+	font-size: 1em;
+	text-decoration: none;
+	color: #010E25;
+}
+
+#Account_list,#sp_list{
+	color: #010E25;
+	list-style: none;
+	display: none;
+	position: absolute;
+	background-color: white;
+	padding: 2%;
+	width: 105%;
+	right: 0%;
+	top: 100%;
+	border: 0.5px solid black;
+}
+#sp_list{
+	width: 200%;
+}
+#Account_list li,#sp_list li{
+	cursor: pointer;
+}
+#up1,#up2{
+	display: none;
+}
+/*-----------------------------------------------------------------*/
+.sp{
+	cursor: pointer;
+}
+footer{
+	background-color: #518003;
+	color: #010E25;
+	margin-top: auto;
+	width: 100%;
+}
+footer a{
+	color: #010E25;
+	cursor: pointer;
+}
+#copy{
+	font-size: 90%;
+}
+#copy p{
+	float: right;
+}
+#icons{
+	font-size: 100%;
+}
+@media screen and (max-width: 800px){
+	nav{
+		flex-direction: column;
+		align-content: space-around;
+		height: 12em;
+		padding: 0.2em;
+	}
+}
