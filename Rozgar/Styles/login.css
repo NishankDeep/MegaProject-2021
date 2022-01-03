@@ -1,15 +1,3 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body{
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	background-color: #E2FC97;
-	font-family: "Times New Roman", "Arial", "sans-serif","Calibri";
-}
 .heading{
 	display: flex;
 	flex-direction: row;
@@ -85,25 +73,7 @@ body{
 	text-align: center;
 	height: 2.5em;
 }
-footer{
-	background-color: #518003;
-	color: #010E25;
-	margin-top: auto;
-	width: 100%;
-}
-footer a{
-	color: #010E25;
-	cursor: pointer;
-}
-#copy{
-	font-size: 90%;
-}
-#copy p{
-	float: right;
-}
-#icons{
-	font-size: 100%;
-}
+
 @media screen and (max-width: 700px){
 	#logo{
 		width: 10%;

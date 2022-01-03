@@ -3,6 +3,11 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+::selection{
+	background-color: white;
+	color: blue;
+}
+
 body{
 	display: flex;
 	flex-direction: column;
@@ -10,138 +15,271 @@ body{
 	background-color: #E2FC97;
 	font-family: "Times New Roman", "Arial", "sans-serif","Calibri";
 }
-/*-----------------------------------------------------------------*/
-nav{
-	background-color: #03AB1B;
-	color: #010E25;
-	height: 5em;
-	padding: 0.2em;
+/*------------------------------------------------------------------------*/
+#first_menu{
+	display: flex;
+	flex-direction: column;
+	background-color: lightgreen;
+}
+#navigation{
+	background-color: lightgreen;
 	display: flex;
 	flex-direction: row;
-	align-content: stretch;
-	justify-content: space-around;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
-/*-----------------------------------------------------------------*/
-.head_logo_tagline{
-	margin-top: 0.8%;
+/*------------------------------------------------------------------------*/
+#roz_logo_tag{
+	display: flex;
+	flex-direction: column;
+}
+#roz_logo{
+	margin-left: 1%;
 	display: flex;
 	flex-direction: row;
-
-}
-.tag_line{
-	position: relative;
-	float: left;
-	left: -5%;
-	margin-top: 3.5%;
+	align-content: center;
+	align-items: center;
 }
 #logo{
-	width: 8%;
+	width: 10%;
 }
-/*-----------------------------------------------------------------*/
-.search_bar_services{
+#roz{
+	font-size: 2rem;
+}
+#tag{
+	margin-left: 20%;
+	font-size: 1.3rem;
+	font-weight: bold;
+	align-self: flex-start;
+	margin-top: -2%;
+}
+/*------------------------------------------------------------------------*/
+#searchbar_icon{
 	display: flex;
 	flex-direction: row;
-	position: relative;
-	right: 30%;
-	float: right;
-	margin: 0.8%;
+	align-items: center;
+	justify-content: flex-start;
+}
+#searchbar input{
+	font-size: 1.3rem;
 }
 #searchicon{
-	position: relative;
-	display: inline;
-	float: right;
-	font-size: 1.8em;
-	padding: 3%;
-	padding-top: 5%;
-	border: 1px solid black;
-	border-left: 0;
-	background-color: white;
+	float: left;
+	font-size: 1.5rem;
 	cursor: pointer;
 }
-.search_bar_services input[type=text]{
-	position: relative;
-	display: inline;
-	float: right;
-	padding: 1%;
-	border: 1px solid black;
-	border-right: 0;
-	font-size: 1em;
+#searchstate{
+	align-self: center;
 }
-/*-----------------------------------------------------------------*/
-#lang{
-	margin: 0.8%;
-	position: relative;
-	display: inline;
-	float: right;
-	padding: 1%;
+#searchstate select{
+	width: 80%;
+	font-size: 1rem;
 	border: 1px solid black;
-	font-size: 0.8em;
+	border-radius: 5px;
 }
-/*-----------------------------------------------------------------*/
-.account,.sp{
-	margin: 1%;
-	position: relative;
-	display: inline;
-	float: right;
-	padding: 1%;
-	border: 1px solid black;
+/*------------------------------------------------------------------------*/
+.options{
+	cursor: pointer;
 	background-color: white;
+	padding: 0.5%;
+	margin: 1% 1%;
+	border: 0.5px solid black;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	height: 2%;
+	display: flex;
+	flex-direction: column;
 }
-.account a,.sp a{
-	font-size: 1em;
-	text-decoration: none;
-	color: #010E25;
-}
-
-#Account_list,#sp_list{
-	color: #010E25;
+#myaccount ul,#more ul{
+	border: 0.5px solid black;
 	list-style: none;
 	display: none;
+	padding: 0.5%;
 	position: absolute;
 	background-color: white;
-	padding: 2%;
-	width: 105%;
-	right: 0%;
-	top: 100%;
-	border: 0.5px solid black;
 }
-#sp_list{
-	width: 200%;
-}
-#Account_list li,#sp_list li{
-	cursor: pointer;
+#myaccount ul li a,#more ul li a{
+	text-decoration: none;
 }
 #up1,#up2{
 	display: none;
 }
-/*-----------------------------------------------------------------*/
-.sp{
-	cursor: pointer;
+#Lang{
+	margin-top: 1%;
 }
+
+.box1{
+    display: flex;
+    background-color: lightgreen;
+    padding: 2% 5%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 60px;
+    width: 100%;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: white;
+    border: 0.5px solid black;
+    padding: 0.5%;
+}
+
+.list a{
+	width: 100%;
+    color: black;
+    text-decoration: none;
+}
+.list a:hover{
+    color: blue;
+    background-color: lightskyblue;
+}
+.subBox{
+	cursor: pointer;
+    font-weight: 700;
+    /* line-height: 0.5; */
+}
+.subBox a{
+	text-decoration: none;
+	color: black;
+}
+.subBox1{
+    /* border: 1px solid; */
+
+    width: 7%;
+    text-align: center;
+    height: 20px;
+
+    font-size: 110%;
+    /* font-weight: ; */
+    letter-spacing: 3px;
+    cursor:default;
+}
+
+.subBox2{
+    /* border: 1px solid; */
+    width: auto;
+    text-align: center;
+    height: 20px;
+    
+    font-size: 110%;
+    letter-spacing: 3px;
+    cursor:default;
+}
+
+.subBox3{
+    /* border: 1px solid; */
+    width: 18%;
+    text-align: center;
+    height: 20px;
+    
+    font-size: 110%;
+    letter-spacing: 3px;
+    cursor:default;
+}
+
+.subBox4{
+    /* border: 1px solid; */
+    width: 6%;
+    text-align: center;
+    height: 20px;
+    
+    font-size: 120%;
+    letter-spacing: 3px;
+    cursor:default;
+}
+
+/*.list1{
+    width: 100%;
+}*/
+
+/*.list2{
+    width: 150%;
+}
+
+.list3{
+    width: 210%;
+}*/
+
+.subBox1:hover .list1,
+.subBox2:hover .list2,
+.subBox3:hover .list3,
+.subBox4:hover .list4{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+@media screen and (max-width:887px) {
+    .box1{
+        display: flex;
+        flex-direction: column;
+        height: 180px;
+
+        justify-content: center;
+    }
+
+    .subBox{
+        /* border: 1px solid; */
+        width: 100%;
+        margin: 1%;
+        height: 20px;
+    }
+    .list a{
+    	display: none;
+    }
+}
+
+
+
 footer{
-	background-color: #518003;
-	color: #010E25;
+	background-color: #013010;
+	display: flex;
+	flex-direction: column;
 	margin-top: auto;
 	width: 100%;
 }
-footer a{
-	color: #010E25;
-	cursor: pointer;
+#all_lists,#tc{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	color: white;
 }
-#copy{
-	font-size: 90%;
+.flist ul{
+	padding-top: 5%;
+	margin: 1%;
+	width: 100%;
+	list-style: none;
+	color: white;
+	font-size: 1.1rem;
 }
-#copy p{
-	float: right;
+.flist ul li a{
+	color: white;
+	font-size: 1rem;
+	text-decoration: none;
 }
-#icons{
-	font-size: 100%;
+.flist ul li a:hover{
+	text-decoration: underline;
 }
-@media screen and (max-width: 800px){
-	nav{
-		flex-direction: column;
-		align-content: space-around;
-		height: 12em;
-		padding: 0.2em;
+#tc{
+	padding: 1%;
+}
+#footericons a{
+	color: white;
+	font-size: 1.1rem;
+}
+@media screen and (max-width: 925px){
+	.add,hr{
+		display: none;
 	}
 }
+
+

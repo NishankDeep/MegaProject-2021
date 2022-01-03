@@ -1,21 +1,29 @@
-function myAccount1(){
-	document.getElementById('Account_list').style.display="inline-block"
-	document.getElementById('up1').style.display="inline-block"
-	document.getElementById('down1').style.display="none"
+function show1() {
+	document.getElementById("myaccountlist").style.display="inline-block"
+	document.getElementById("up1").style.display="inline-block"
+	document.getElementById("down1").style.display="none"
 }
-function myAccount2(){
-	document.getElementById('Account_list').style.display="none"
-	document.getElementById('up1').style.display="none"
-	document.getElementById('down1').style.display="inline-block"
+function hide1() {
+	document.getElementById("myaccountlist").style.display="none"
+	document.getElementById("up1").style.display="none"
+	document.getElementById("down1").style.display="inline-block"
 }
 
-function More1(){
-	document.getElementById('sp_list').style.display="inline-block"
-	document.getElementById('up2').style.display="inline-block"
-	document.getElementById('down2').style.display="none"
+function show2() {
+	document.getElementById("morelist").style.display="inline-block"
+	document.getElementById("up2").style.display="inline-block"
+	document.getElementById("down2").style.display="none"
 }
-function More2(){
-	document.getElementById('sp_list').style.display="none"
-	document.getElementById('up2').style.display="none"
-	document.getElementById('down2').style.display="inline-block"
+function hide2() {
+	document.getElementById("morelist").style.display="none"
+	document.getElementById("up2").style.display="none"
+	document.getElementById("down2").style.display="inline-block"
+}
+function changecolor(){
+	var x=document.getElementById("heart");
+	if(x.style.color=="black"){
+		x.style.color="red";
+	}else{
+		x.style.color="black";
+	}
 }
